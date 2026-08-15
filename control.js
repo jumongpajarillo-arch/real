@@ -333,3 +333,38 @@ function searchRecordSuper() {
     renderSuperData();
   }
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // stop default PHP submit for demo
+
+    // Collect values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    // Basic validation
+    if (!name || !email || !subject || !message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    // Simulate sending data (replace with AJAX or PHP later)
+    const formData = {
+      name,
+      email,
+      subject,
+      message,
+    };
+
+    console.log("Form submitted:", formData);
+
+    // Show success feedback
+    alert("✅ Your message has been sent successfully!");
+
+    // Reset form
+    form.reset();
+  });
+});
