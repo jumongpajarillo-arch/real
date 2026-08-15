@@ -25,13 +25,15 @@ h1 {
 }
 
 .buttons {
-  margin-bottom: 15px;
+  margin-bottom:10px;
+  align-items: right;
+ 
 }
 
 .btn {
   display: inline-block;
-  background: #007BFF;
-  color: #fff;
+  background: #f6f7f8;
+  color: #333;
   padding: 8px 15px;
   text-decoration: none;
   border-radius: 4px;
@@ -39,7 +41,7 @@ h1 {
 }
 
 .btn:hover {
-  background: #0056b3;
+  background: #f5f6f7;
 }
 
 nav a {
