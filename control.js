@@ -361,10 +361,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log("Form submitted:", formData);
 
-    // Show success feedback
     alert("✅ Your message has been sent successfully!");
 
-    // Reset form
+    
     form.reset();
   });
 });
