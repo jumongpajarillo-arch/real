@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anniversary Surprise</title>
+    <title>Happy Birthday Glaiza Mae!</title>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         * {
@@ -39,7 +39,6 @@
             pointer-events: none;
         }
 
-        /* Initial Screen */
         #start-screen {
             z-index: 10;
         }
@@ -70,7 +69,7 @@
 
         .gold-title {
             font-family: 'Playfair Display', serif;
-            font-size: 2.2em;
+            font-size: 2em;
             color: #f3e5ab;
             text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
             margin: 5px 0 15px 0;
@@ -101,7 +100,6 @@
             margin-top: 20px;
         }
 
-        /* Tunnel Canvas */
         #tunnel-canvas {
             position: absolute;
             top: 0;
@@ -114,7 +112,6 @@
             transition: opacity 0.5s ease;
         }
 
-        /* Main Content Screen */
         #main-screen {
             z-index: 5;
             overflow-y: auto;
@@ -187,8 +184,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 70px;
-            height: 70px;
+            width: 75px;
+            height: 75px;
             border-radius: 50%;
             border: 2px solid #d4af37;
             background: rgba(212, 175, 55, 0.1);
@@ -197,7 +194,7 @@
 
         .badge-num {
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1.5em;
             color: #f3e5ab;
             line-height: 1;
         }
@@ -235,7 +232,6 @@
             background: rgba(212, 175, 55, 0.2);
         }
 
-        /* Letter Modal */
         .modal {
             position: fixed;
             top: 0;
@@ -334,7 +330,6 @@
             color: #8a1538;
         }
 
-        /* Floating particles */
         .particle {
             position: absolute;
             pointer-events: none;
@@ -364,76 +359,72 @@
 </head>
 <body>
 
-    <!-- Initial Screen -->
     <div id="start-screen" class="screen">
         <div class="card-container">
-            <div class="gift-icon">🎁</div>
-            <div class="gold-text-sub">Friends Anniversary</div>
-            <div class="gold-title">A Special Surprise For My Friends</div>
+            <div class="gift-icon">🎂</div>
+            <div class="gold-text-sub">It's A Special Day</div>
+            <div class="gold-title">Happy Birthday Glaiza Mae!</div>
             <button class="btn-surprise" onclick="startTransition()">Tap To Open Surprise</button>
-            <div class="sub-note">🔔 Turn on sound for best experience</div>
+            <div class="sub-note">✨ A little birthday surprise for you</div>
         </div>
     </div>
 
-    <!-- Heart Tunnel Transition Canvas -->
     <canvas id="tunnel-canvas"></canvas>
 
-    <!-- Main Content Screen -->
     <div id="main-screen" class="screen hidden">
-        <div class="main-title">Happy Friend Anniversary</div>
-        <div class="names">My Friends</div>
+        <div class="main-title">Happy Birthday</div>
+        <div class="names">Glaiza Mae Corpuz</div>
 
         <div class="polaroid">
-            <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=600&auto=format&fit=crop" alt="Couple photo">
-            <div class="polaroid-caption">Forever My Favorite Person</div>
+            <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=600&auto=format&fit=crop" alt="Birthday Celebration">
+            <div class="polaroid-caption">To An Amazing Friend</div>
         </div>
 
-        <div class="heart-divider">♥</div>
-        <div class="journey-text">To Us Journey</div>
+        <div class="heart-divider">✨</div>
+        <div class="journey-text">Celebrating You Today & Always</div>
 
         <div class="badge">
-            <span class="badge-num">5</span>
-            <span class="badge-text">Years of Friendship</span>
+            <span class="badge-num">🎈</span>
+            <span class="badge-text">Best Friend</span>
         </div>
 
-        <div class="quote">"Every friendship is special, but ours is my favorite."</div>
+        <div class="quote">"Count your age by friends, not years. Count your life by smiles, not tears."</div>
 
         <button class="btn-letter" onclick="openLetter()">
-            ✉ Open My Friend Anniversary Letter
+            ✉ Open Birthday Message
         </button>
     </div>
 
-    <!-- Friend Anniversary  Letter Modal -->
     <div id="letter-modal" class="modal">
         <div class="letter-paper">
             <span class="close-btn" onclick="closeLetter()">&times;</span>
             <div class="letter-header">
-                <div class="icon">♥</div>
-                <div class="letter-title">My Dearest Friend,</div>
+                <div class="icon">🎂</div>
+                <div class="letter-title">Dearest Glaiza Mae,</div>
             </div>
-             <div class="letter-body">
-        <p>Happy Friend Anniversary to the amazing friends who fill my heart with endless joy, laughter, and warmth every single day.</p>
-        <p>From the moment I entered high school and college, each of you has made my journey brighter. Every day with you has been a beautiful adventure—whether through late-night talks, shared struggles, or unforgettable laughter. You are my circle of strength, my calm in the storm, and the best part of every memory.</p>
-        <p>Thank you for all the sweet moments, the unconditional support, and for building this wonderful chapter of life together.</p>
+              <div class="letter-body">
+        <p>Happy, happy birthday to one of the most incredible people I know!</p>
+        <p>On your special day, I want to thank you for bringing so much light, warmth, and laughter into the lives of everyone around you. Having you as a friend is a true blessing.</p>
+        <p>You may be <strong>makulit</strong> and sometimes <strong>mainitin ang ulo</strong>, but you’re also the one who made my days brighter from the moment I met you back in my first year. I’m truly glad to be your friend.</p>
+        <p>May this new year of your life bring you endless happiness, beautiful adventures, success in everything you do, and all the love you so richly deserve.</p>
         <div class="highlight-box">
-            "Here’s to us, to our forever friendships, and to a million more memories together!"
+            "Here's to celebrating you today, and to making many more wonderful memories together!"
         </div>
             </div>
             <div class="letter-footer">
-                <div class="valediction">Forever & Ever,</div>
-                <div class="signature">With All My Heart ♥</div>
+                <div class="valediction">Wishing You The Absolute Best,</div>
+                <div class="signature">Your Best Friend ✨</div>
             </div>
         </div>
     </div>
 
     <script>
-        // Particle Background Generation
         function createParticles() {
-            const colors = ['#e6005c', '#d4af37', '#ffffff', '#ff99bb'];
+            const colors = ['#e6005c', '#d4af37', '#ffffff', '#ff99bb', '#ffd700'];
             for (let i = 0; i < 25; i++) {
                 const particle = document.createElement('div');
                 particle.className = 'particle';
-                particle.innerHTML = Math.random() > 0.5 ? '♥' : '✦';
+                particle.innerHTML = Math.random() > 0.5 ? '✨' : '🎈';
                 particle.style.left = Math.random() * 100 + 'vw';
                 particle.style.color = colors[Math.floor(Math.random() * colors.length)];
                 particle.style.fontSize = (Math.random() * 15 + 10) + 'px';
@@ -444,7 +435,6 @@
         }
         createParticles();
 
-        // 3D Heart Tunnel Canvas Animation
         const canvas = document.getElementById('tunnel-canvas');
         const ctx = canvas.getContext('2d');
         let animationFrameId;
@@ -502,14 +492,12 @@
                 drawHeart(centerX, centerY, scale, null, strokeColor);
             }
 
-            // Central solid heart growing
             const centerScale = Math.min(tunnelProgress * 15, canvas.width > canvas.height ? canvas.width / 10 : canvas.height / 10);
             drawHeart(centerX, centerY, centerScale, '#1a0927', '#d4af37');
 
             if (tunnelProgress < 2.5) {
                 animationFrameId = requestAnimationFrame(animateTunnel);
             } else {
-                // Transition Complete
                 canvas.style.opacity = '0';
                 setTimeout(() => {
                     canvas.style.display = 'none';
@@ -526,7 +514,6 @@
             animateTunnel();
         }
 
-        // Modal Controls
         function openLetter() {
             document.getElementById('letter-modal').classList.add('active');
         }
