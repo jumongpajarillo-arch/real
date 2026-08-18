@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #fff;
+      margin-bottom: 40px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ff4081;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    button:hover {
+      transform: scale(1.1);
+      background-color: #e91e63;
+    }
+    .note {
+      display: none;
+      width: 250px;
+      height: 150px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 20px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+    }
+    .note.show {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .note h2 {
+      color: #ff4081;
+    }
+    </style>
+</head>
+<body>
+<body>
+     <h1>🎂 Welcome to the Birthday Website 🎉</h1>
+  
+  <!-- Button to enter greetings -->
+  <button onclick="showGreetings()">Enter Greetings</button>
+  
+  <!-- Greeting Notes -->
+  <div class="note" id="note1">
+    <h2>Happy Birthday!</h2>
+    <p>Wishing you joy, laughter, and endless celebrations today!</p>
+  </div>
+  
+  <div class="note" id="note2">
+    <h2>To My Friend</h2>
+    <p>Thank you for being such a wonderful friend. Cheers to more memories!</p>
+  </div>
+
+    
+</body>
+</html>
