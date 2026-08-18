@@ -1,0 +1,91 @@
+/* Background gradient for the whole page */
+body {
+    background: linear-gradient(135deg, #0d0614, #1a0927);
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Card design */
+.letter-paper {
+    background: #fffdf5;
+    color: #2c221e;
+    padding: 40px 30px;
+    border-radius: 16px;
+    width: 420px;
+    height: 700px;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.6), 0 0 20px rgba(212,175,55,0.3);
+    border: 2px solid #d4af37;
+    margin: auto;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Decorative header */
+.letter-header .icon {
+    font-size: 2em;
+    color: #e6005c;
+    animation: pulse 1.5s infinite;
+}
+.letter-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8em;
+    color: #8a1538;
+    text-shadow: 0 0 8px rgba(138,21,56,0.4);
+    margin-top: 10px;
+}
+
+/* Body text */
+.letter-body {
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    line-height: 1.9;
+    color: #4a3f35;
+    text-align: center;
+}
+.letter-body p {
+    margin-bottom: 18px;
+}
+
+/* Highlight box */
+.highlight-box {
+    background: #f7ede2;
+    border-left: 4px solid #8a1538;
+    padding: 12px 18px;
+    font-style: italic;
+    margin: 20px 0;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.letter-footer {
+    text-align: center;
+    margin-top: 30px;
+}
+.valediction {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+}
+.signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.4em;
+    color: #8a1538;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

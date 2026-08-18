@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 1</title>
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  
+    <h1> DATABASE INFORMATION AND MANAGEMENT</h1>
+<div class="paper">
+    <div class="buttons">
+      <a href="database.html" class="btn">Home</a>
+    </div>
+    
+ 
+    <a href="first.html">Profile</a>
+  
+
+    <div class="role-selector">
+      <label for="role">Select Role: </label>
+      <select id="role" onchange="setRole()">
+        <option value="">-- Choose Role --</option>
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+        <option value="superadmin">Super Admin</option>
+      </select>
+    </div>
+
+    <div id="userForm" class="hidden form-container"></div>
+
+    <div id="adminPanel" class="hidden panel">
+      <h2>Admin Panel</h2>
+      <input type="text" id="searchValueAdmin" placeholder="Search by any field">
+      <button onclick="searchRecordAdmin()">Search</button>
+      <div id="adminData"></div>
+    </div>
+
+    <div id="superAdminPanel" class="hidden panel">
+      <h2>Super Admin Panel</h2>
+      <p>Full access: view, add, update, delete records.</p>
+      <button onclick="toggleAddForm()">Add New Record</button>
+      <button onclick="manageColumns()">Manage Columns</button>
+      <input type="text" id="searchValueSuper" placeholder="Search by any field">
+      <button onclick="searchRecordSuper()">Search</button>
+
+      <div id="superForm" class="hidden form-container"></div>
+      <div id="editForm" class="hidden form-container"></div>
+      <div id="columnManager" class="hidden form-container"></div>
+      <div id="superData"></div>
+    </div>
+
+   
+
+  <!-- JS linked here -->
+  <script src="control.js"></script>
+</body>
+</html>
