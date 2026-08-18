@@ -232,129 +232,126 @@
             background: rgba(212, 175, 55, 0.2);
         }
 
-        .modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.85);
-            z-index: 30;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.4s ease;
-        }
+       .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
 
-        .modal.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
+.modal.active {
+    opacity: 1;
+    pointer-events: auto;
+}
 
-        .letter-paper {
-            background: #fffdf5;
-            color: #2c221e;
-            padding: 35px 25px;
-            border-radius: 8px;
-            max-width: 420px;
-            width: 100%;
-            max-height: 85vh;
-            overflow-y: auto;
-            position: relative;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            border: 1px solid #e8dfc8;
-        }
+/* Portrait card */
+.letter-paper {
+    background: #fffdf5;
+    color: #2c221e;
+    padding: 35px 25px;
+    border-radius: 12px;
+    width: 420px;       /* Portrait width */
+    height: 700px;      /* Portrait height */
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid #e8dfc8;
+    margin: auto;
+}
 
-        .close-btn {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 1.5em;
-            color: #888;
-            cursor: pointer;
-        }
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5em;
+    color: #888;
+    cursor: pointer;
+}
 
-        .letter-header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+/* Header */
+.letter-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.letter-header .icon {
+    color: #e6005c;
+    font-size: 1.8em;
+}
+.letter-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+    color: #8a1538;
+}
 
-        .letter-header .icon {
-            color: #e6005c;
-            font-size: 1.8em;
-        }
+/* Body */
+.letter-body {
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    line-height: 1.9;
+    color: #4a3f35;
+    text-align: center;
+}
+.letter-body p {
+    margin-bottom: 18px;
+}
 
-        .letter-title {
-            font-family: 'Great Vibes', cursive;
-            font-size: 2.5em;
-            color: #8a1538;
-        }
+/* Highlight box */
+.highlight-box {
+    background-color: #f7ede2;
+    border-left: 3px solid #8a1538;
+    padding: 12px 18px;
+    font-style: italic;
+    margin: 20px 0;
+}
 
-        .letter-body {
-            font-family: 'Playfair Display', serif;
-            font-size: 0.92em;
-            line-height: 1.8;
-            color: #4a3f35;
-        }
+/* Footer */
+.letter-footer {
+    text-align: center;
+    margin-top: 30px;
+}
+.valediction {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+}
+.signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.2em;
+    color: #8a1538;
+}
 
-        .letter-body p {
-            margin-bottom: 15px;
-        }
+/* Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
 
-        .highlight-box {
-            background-color: #f7ede2;
-            border-left: 3px solid #8a1538;
-            padding: 10px 15px;
-            font-style: italic;
-            margin: 15px 0;
-        }
-
-        .letter-footer {
-            text-align: center;
-            margin-top: 25px;
-        }
-
-        .valediction {
-            font-size: 0.75em;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #888;
-        }
-
-        .signature {
-            font-family: 'Great Vibes', cursive;
-            font-size: 2.2em;
-            color: #8a1538;
-        }
-
-        .particle {
-            position: absolute;
-            pointer-events: none;
-            animation: floatUp linear infinite;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.08); }
-            100% { transform: scale(1); }
-        }
-
-        @keyframes floatUp {
-            0% {
-                transform: translateY(100vh) scale(0.5);
-                opacity: 0;
-            }
-            20% {
-                opacity: 0.8;
-            }
-            100% {
-                transform: translateY(-10vh) scale(1.2);
-                opacity: 0;
-            }
-        }
+@keyframes floatUp {
+    0% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-10vh) scale(1.2);
+        opacity: 0;
+    }
+}
     </style>
 </head>
 <body>
@@ -376,8 +373,8 @@
         <div class="names">Glaiza Mae Corpuz</div>
 
         <div class="polaroid">
-            <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=600&auto=format&fit=crop" alt="Birthday Celebration">
-            <div class="polaroid-caption">To An Amazing Friend</div>
+            <img src="487691454_122130905600774898_2830018194644257466_n.jpg" alt="Glaiza Mae"> 
+           <div class="polaroid-caption">To An Amazing Friend</div>
         </div>
 
         <div class="heart-divider">✨</div>
@@ -399,10 +396,10 @@
         <div class="letter-paper">
             <span class="close-btn" onclick="closeLetter()">&times;</span>
             <div class="letter-header">
-                <div class="icon">🎂</div>
-                <div class="letter-title">Dearest Glaiza Mae,</div>
+              
             </div>
-              <div class="letter-body">
+            <div class="letter-body">
+               
         <p>Happy, happy birthday to one of the most incredible people I know!</p>
         <p>On your special day, I want to thank you for bringing so much light, warmth, and laughter into the lives of everyone around you. Having you as a friend is a true blessing.</p>
         <p>You may be <strong>makulit</strong> and sometimes <strong>mainitin ang ulo</strong>, but you’re also the one who made my days brighter from the moment I met you back in my first year. I’m truly glad to be your friend.</p>
@@ -410,13 +407,10 @@
         <div class="highlight-box">
             "Here's to celebrating you today, and to making many more wonderful memories together!"
         </div>
+                  <div class="icon">🎂</div>
+                <div class="letter-title">Dearest Glaiza Mae,</div>
             </div>
-            <div class="letter-footer">
-                <div class="valediction">Wishing You The Absolute Best,</div>
-                <div class="signature">Your Best Friend ✨</div>
-            </div>
-        </div>
-    </div>
+        
 
     <script>
         function createParticles() {
